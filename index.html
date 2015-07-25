@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Realtime Chrome Push Notifications example</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- THESE ARE THE REQUIRED FILES TO USE CHROME PUSH NOTIFICATIONS -->
+  <link rel="manifest" href="manifest.json">
+  <script src="ChromePushManager.js"></script>  
+  <script src="//dfdbz2tdq3k01.cloudfront.net/js/2.1.0/ortc.js"></script>
+  
+  <!-- THESE FILES ARE ONLY REQUIRED FOR THE CURRENT EXAMPLE -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+  <script src="index.js"></script>
+
+</head>
+<body>
+  <div class="container">
+      <div class="" style="margin-top: 2%">
+        <h1>Chrome Notifications using Realtime cloud messaging service</h1>
+        <p>
+          Your channel is: <code><span id="channel">...</span></code>
+        </p>
+        <p>
+          <button id="sendButton" class="button-primary" onclick="javascript:send();">Send me a push notification</button>
+        </p>
+        <p>
+        <div id="curl" style="padding: 15px; background-color: black; color: white;">
+        </div>
+        </p>
+      </div>
+  </div>
+</body>
+</html>
+
+
